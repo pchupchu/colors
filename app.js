@@ -17,6 +17,8 @@ document.addEventListener('click', event => {
 
     node.classList.toggle('fa-lock-open');
     node.classList.toggle('fa-lock');
+  } else if (type === 'copy') {
+    copyToClick(event.target.textContent);
   }
 })
 
@@ -26,7 +28,11 @@ function generateRandomColor() {
   for (let i = 0; i < 6; i++) {
     color += hexCodes[Math.floor(Math.random() * hexCodes.length)]
   }
-  return '#' + color;
+  return '#' + color
+}
+
+function copyToClick(text) {
+  return navigator.clipboard.writeText(text)
 }
 
 function setRandomColors() {
