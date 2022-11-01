@@ -40,6 +40,7 @@ body {
   transition: background .3s;
   color: #fff;
   font-size: 25px;
+  outline: none;
 }
 
 .button:hover {
