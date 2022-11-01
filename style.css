@@ -1,0 +1,48 @@
+@import url(./fonts/fonts.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  transition: background .3s;
+}
+
+.title:hover {
+  background: rgba(0, 0, 0, .1);
+  cursor: pointer;
+}
+
+.button {
+  background: transparent;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background .3s;
+  color: #fff;
+  font-size: 25px;
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, .1);
+  cursor: pointer; 
+}
